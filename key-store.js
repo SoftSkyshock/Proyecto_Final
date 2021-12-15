@@ -5,10 +5,10 @@ const shortid = require('shortid');
 const LINE_ENDING = require('os').EOL;
 
 
-module.exports = function (req, res) {  
+module.exports = function (req, res) {
     const apiKey = shortid.generate();
     const fd = fs.openSync(VALID_KEYS_PATH, 'a');
-    //fs.appendFileSync(fd, apiKey + LINE_ENDING, 'utf8');
+    fs.appendFileSync(fd, apiKey + LINE_ENDING, 'utf8');
     return res.status(201).send({ apiKey });
 };
 

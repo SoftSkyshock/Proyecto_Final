@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="14.0200" tests="10" failures="10">
+  <testsuite name="Root Suite" timestamp="2021-12-02T01:36:01" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="express_authentication" timestamp="2021-12-02T01:36:01" tests="7" file="/home/eaguilar/Documents/Projects/proyect/test/index.spec.js" time="8.0180" failures="4">
+    <testcase name="express_authentication Should generate an API key and add it to file" time="2.0010" classname="Should generate an API key and add it to file">
+      <failure message="Timeout of 2000ms exceeded. For async tests and hooks, ensure &quot;done()&quot; is called; if returning a Promise, ensure it resolves. (/home/eaguilar/Documents/Projects/proyect/test/index.spec.js)" type="Error"><![CDATA[Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (/home/eaguilar/Documents/Projects/proyect/test/index.spec.js)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)]]></failure>
+    </testcase>
+    <testcase name="express_authentication Should generate 5 unique API Keys" time="2.0020" classname="Should generate 5 unique API Keys">
+      <failure message="Timeout of 2000ms exceeded. For async tests and hooks, ensure &quot;done()&quot; is called; if returning a Promise, ensure it resolves. (/home/eaguilar/Documents/Projects/proyect/test/index.spec.js)" type="Error"><![CDATA[Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (/home/eaguilar/Documents/Projects/proyect/test/index.spec.js)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)]]></failure>
+    </testcase>
+    <testcase name="express_authentication Should return the API Key back in response" time="2.0010" classname="Should return the API Key back in response">
+      <failure message="Timeout of 2000ms exceeded. For async tests and hooks, ensure &quot;done()&quot; is called; if returning a Promise, ensure it resolves. (/home/eaguilar/Documents/Projects/proyect/test/index.spec.js)" type="Error"><![CDATA[Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (/home/eaguilar/Documents/Projects/proyect/test/index.spec.js)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)]]></failure>
+    </testcase>
+    <testcase name="express_authentication Should send a 401 if the x-api-key header is not present" time="0.0030" classname="Should send a 401 if the x-api-key header is not present">
+    </testcase>
+    <testcase name="express_authentication Should send a 401 if the x-api-key is invalid" time="0.0030" classname="Should send a 401 if the x-api-key is invalid">
+    </testcase>
+    <testcase name="express_authentication Should validate header for protected routes" time="2.0010" classname="Should validate header for protected routes">
+      <failure message="Timeout of 2000ms exceeded. For async tests and hooks, ensure &quot;done()&quot; is called; if returning a Promise, ensure it resolves. (/home/eaguilar/Documents/Projects/proyect/test/index.spec.js)" type="Error"><![CDATA[Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (/home/eaguilar/Documents/Projects/proyect/test/index.spec.js)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)]]></failure>
+    </testcase>
+    <testcase name="express_authentication Should not require auth headers for unprotected routes" time="0.0070" classname="Should not require auth headers for unprotected routes">
+    </testcase>
+  </testsuite>
+  <testsuite name="payment check" timestamp="2021-12-02T01:36:09" tests="3" file="/home/eaguilar/Documents/Projects/proyect/test/payment.spec.js" time="6.0020" failures="6">
+    <testcase name="payment check Should generate an random price" time="2.0000" classname="Should generate an random price">
+      <failure message="Timeout of 2000ms exceeded. For async tests and hooks, ensure &quot;done()&quot; is called; if returning a Promise, ensure it resolves. (/home/eaguilar/Documents/Projects/proyect/test/payment.spec.js)" type="Error"><![CDATA[Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (/home/eaguilar/Documents/Projects/proyect/test/payment.spec.js)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)]]></failure>
+    </testcase>
+    <testcase name="payment check &quot;after each&quot; hook for &quot;Should generate 5 random prices&quot;" time="0.0000" classname="&quot;after each&quot; hook for &quot;Should generate 5 random prices&quot;">
+      <failure message="done() called multiple times" type="Error"><![CDATA[Error: done() called multiple times
+    at /home/eaguilar/Documents/Projects/proyect/test/payment.spec.js:35:23]]></failure>
+    </testcase>
+    <testcase name="payment check Should generate 5 random prices" time="2.0000" classname="Should generate 5 random prices">
+      <failure message="Timeout of 2000ms exceeded. For async tests and hooks, ensure &quot;done()&quot; is called; if returning a Promise, ensure it resolves. (/home/eaguilar/Documents/Projects/proyect/test/payment.spec.js)" type="Error"><![CDATA[Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (/home/eaguilar/Documents/Projects/proyect/test/payment.spec.js)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)]]></failure>
+    </testcase>
+    <testcase name="payment check &quot;after each&quot; hook for &quot;Should return 5 promo codes&quot;" time="0.0000" classname="&quot;after each&quot; hook for &quot;Should return 5 promo codes&quot;">
+      <failure message="done() called multiple times" type="Error"><![CDATA[Error: done() called multiple times
+    at /home/eaguilar/Documents/Projects/proyect/test/payment.spec.js:35:23]]></failure>
+    </testcase>
+    <testcase name="payment check Should return 5 promo codes" time="2.0020" classname="Should return 5 promo codes">
+      <failure message="Timeout of 2000ms exceeded. For async tests and hooks, ensure &quot;done()&quot; is called; if returning a Promise, ensure it resolves. (/home/eaguilar/Documents/Projects/proyect/test/payment.spec.js)" type="Error"><![CDATA[Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (/home/eaguilar/Documents/Projects/proyect/test/payment.spec.js)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)]]></failure>
+    </testcase>
+    <testcase name="payment check &quot;after each&quot; hook in &quot;payment check&quot;" time="0.0000" classname="&quot;after each&quot; hook in &quot;payment check&quot;">
+      <failure message="done() called multiple times" type="Error"><![CDATA[Error: done() called multiple times
+    at /home/eaguilar/Documents/Projects/proyect/test/payment.spec.js:35:23]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

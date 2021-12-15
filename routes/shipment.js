@@ -1,15 +1,15 @@
 var express = require('express');
 var router = express.Router();
-var tasksController = require('../controllers/tasks.controller');
+var shipmentController = require('../controllers/shipment.controller');
 var middleware = require('../middleware');
 
 
-router.get('/:id', tasksController.getById);
-
-router.use(middleware);
+// router.get('/:id', shipmentController.getById);
 
 router
-    .post('/', tasksController.create)
-    .get('/', tasksController.getAll);
+    .post('/create', shipmentController.createShipment)
+    .get('/', shipmentController.changeStatus);
+
+router.use(middleware);
 
 module.exports = router;

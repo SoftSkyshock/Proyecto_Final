@@ -15,7 +15,7 @@ module.exports = {
     sum: function (req, res) {
         const {a, b} = req.body
         res.status(201).json({
-            'suma': `${a} + ${b} = ${parseFloat(a) + parseFloat(b)}`
+            'suma': `${a} + ${b} = ${a + b}`
         });
     },
 

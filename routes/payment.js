@@ -6,10 +6,10 @@ var middleware = require('../middleware');
 
 //router.use(middleware);
 
-router
-    .get('/promos', paymentController.getPromos)
-    .post('/apply-discount', paymentController.applyDiscount)
-    .post('/', paymentController.create);
+
+router.get('/promos', paymentController.getPromos)
+router.post('/apply-discount', paymentController.applyDiscount)
+router.post('/', paymentController.create);
 
 router.use(middleware);
 

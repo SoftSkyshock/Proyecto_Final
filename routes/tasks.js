@@ -8,8 +8,7 @@ router.get('/:id', tasksController.getById);
 
 router.use(middleware);
 
-router
-    .post('/', tasksController.create)
-    .get('/', tasksController.getAll);
+router.post('/', tasksController.create)
+router.get('/', tasksController.getAll);
 
 module.exports = router;

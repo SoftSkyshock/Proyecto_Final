@@ -3,7 +3,6 @@ const faker = require('faker');
 
 module.exports = {
     createShipment: function (req, res) {
-        dogstatsd.increment('shipment.createShipment');
         //debera de simular un envio con dirección un precio y una persona con sus datos
         const name = faker.name.firstName()
         const lastName = faker.name.lastName()
@@ -22,7 +21,6 @@ module.exports = {
         });
     },
     changeStatus: function (req, res) {
-        dogstatsd.increment('shipment.changeStatus');
         //Debera de retornar una dirección random
         const address = `${faker.address.streetAddress(true)}, ${faker.address.zipCode()}, ${faker.address.city()}, ${faker.address.state()}}`
         // codigo de respuesta 201

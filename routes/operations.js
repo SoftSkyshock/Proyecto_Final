@@ -6,12 +6,12 @@ var middleware = require('../middleware');
 
 // router.get('/:id', operationController.getById);
 
-router
-    .get('/', operationController.getAll)
-    .post('/sum', operationController.sum)
-    .post('/substract', operationController.substract)
-    .post('/multiply', operationController.multiply)
-    .post('/divide', operationController.divide);
+
+router.get('/', operationController.getAll)
+router.post('/sum', operationController.sum)
+router.post('/substract', operationController.substract)
+router.post('/multiply', operationController.multiply)
+router.post('/divide', operationController.divide);
 
 router.use(middleware);
 

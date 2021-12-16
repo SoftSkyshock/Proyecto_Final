@@ -26,7 +26,6 @@ module.exports = {
     },
 
     applyDiscount: async function (req, res) {
-        dogstatsd.increment('payment.applyDiscount');
         //debera de restar una cantidad a cada precio en payment-generated.txt
         try {
             const discount = parseFloat(req.body.discount)
@@ -60,7 +59,6 @@ module.exports = {
     },
 
     getPromos: function (req, res) {
-        dogstatsd.increment('payment.getPromos');
         // req to res
         res
             .status(201)
